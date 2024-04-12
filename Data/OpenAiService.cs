@@ -17,6 +17,7 @@ public class OpenAiService
     model = Environment.GetEnvironmentVariable("model")!;
 
     if (string.IsNullOrEmpty(endpoint) || string.IsNullOrEmpty(apiKey) || string.IsNullOrEmpty(model))
+
     {
         throw new ApplicationException("OpenAI configuration is incomplete.");
     }
